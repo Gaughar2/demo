@@ -3,8 +3,8 @@ library(jsonlite)
 load("PredictionDemo.RData")
 
 #* @post /predict
-predict <- function(DOB,HEIGHT,WEIGHT,Diabetes,BloodSugar,HistoricAdverseTerms,HighBloodPressure,Aviation,Cholesterol_Reading){
-    data <-list(DOB=DOB,HEIGHT=HEIGHT,WEIGHT=WEIGHT,Diabetes=Diabetes,BloodSugar=BloodSugar,HistoricAdverseTerms=HistoricAdverseTerms,HighBloodPressure =HighBloodPressure,Aviation=Aviation,Cholesterol_Reading=Cholesterol_Reading)
+predict <- function(dob,height,weight,diabetes,bloodSugar,historicAdverseTerms,highBloodPressure,aviation,cholesterolReading){
+    data <-list(dob=dob,height=height,weight=weight,diabetes=diabetes,bloodSugar=bloodSugar,historicAdverseTerms=historicAdverseTerms,highBloodPressure =highBloodPressure,aviation=aviation,cholesterolReading=cholesterolReading)
     prediction <- do.call(Demo,data)
  
 }
