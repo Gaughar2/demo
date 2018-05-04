@@ -1,6 +1,6 @@
 library(lubridate)
 library(jsonlite)
-load("Demo_Model2.RData")
+load("PredictionDemo.RData")
 
 #* @post /predict
 predict <- function(DOB,HEIGHT,WEIGHT,Diabetes,BloodSugar,HistoricAdverseTerms,HighBloodPressure,Aviation,Cholesterol_Reading){
